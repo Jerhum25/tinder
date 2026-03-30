@@ -1,11 +1,11 @@
-'use client'
+"use client";
 import { useEffect, useState } from "react";
 import Header from "./Header";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0);
-   useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
@@ -30,7 +30,12 @@ export default function Hero() {
           Créer un compte
         </button>
       </div>
-      <p className="text-white text-xs self-end p-1">
+      <p
+        className="text-white text-xs self-end p-1"
+        style={{
+          opacity: opacity,
+        }}
+      >
         Les photos mettent en scène des mannequins, et sont exclusivement
         utilisées à des fins d'illustration
       </p>
